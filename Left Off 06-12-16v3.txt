@@ -1,0 +1,703 @@
+
+
+-----------------------
+#last completed
+-----------------------
+
+
+Last completed the website
+Had some people review it, but had not launched it publicly yet
+
+
+
+-----------------------
+#do next
+-----------------------
+
+Search for #DO NEXT#
+then search for #DO LATER# and #DO SOON#
+
+
+
+ 
+
+-----------------------
+#notes
+-----------------------
+
+-need to launch apache and view my website from the server to see the effects
+i.e. http://mywebsite.localdomain/practice16
+
+Take notes on how to code and do webpages here:
+K:\Working Directory\DESIGN_PROJ\Design Projects\Robot\My Notes\Text Notes
+
+
+-don't focus tooo much on your website as it won't naturally get as much attention as youtube or linkedin
+https://www.youtube.com/watch?v=yxD-boFg2GY
+
+
+-keep website as personal and not professional. don't advertise it to recruiters except when asked about my skills.
+
+-since i will not use this for a pro site, make minimal fixes to the message and the mobile effects, do seo, then move on to other projects. can update later when i get bored.
+-maybe write less content in my bio, etc. or leave it as is. good enough. move on.
+Full page image gallery reference:
+http://tympanus.net/codrops/2010/09/08/full-page-image-gallery/
+
+-careful giving too much personal info on your website and have identity theft or spam					
+
+
+		
+
+
+-----------------------
+#Tasks
+-----------------------
+
+
+
+
+
+#DO SOON# do media queries as needed for responsive site
+	
+	
+
+			Nav Bar
+#DO NEXT#-look into why the nav bar shrinks a little when you click on it if have time. low priority.. see versions like v63 when this wasn't a problem but v64 did
+			
+					
+					[if have time]make a basic logo for website
+							change it later if domain name is taken
+							might use the same logo for business card
+							
+							
+		
+							
+				Intro section
+						#if you have time or bored. else good enough for now#-fade out the intro pic on scroll
+						#DO LATER#find a better into page pic that isn't my zoomed in face. maybe zoom out a bit
+							
+				Quote section 1
+				
+#DO NEXT# fix media queries and the parallax to make it work and the text readable (it's fading out too soon)				
+#DO LATER#[on hold. fix it only after done with layout]do quote 01 media queries and javascript
+
+	
+				
+			#if you have time or bored. else good enough for now#
+						you can fine tune the CSS and javascript values
+						media queries
+
+						turn on the background color for debig
+						change the margin-top's and height (if needed)
+							
+							.quote_01 .container-fluid{ 
+								height: 600px;
+							}
+							
+							.quote_01 h1{
+								margin-top: -10px;
+								font-size: 2.1em;
+								/*background-color: red;/*keep around for debug*/
+								
+							}
+							.quote_01 p.lead{
+								margin-top: -10px;/*the smaller the number the higher the element is*/
+								font-size: 1.8em;
+							}
+												
+						also in the javascript code, tweak the variable values in the fadeAndParallaxScroll_MediaQuery()
+																			
+						
+						
+						
+						
+						
+								About Me
+#DO NEXT#-maybe use less graphic words like umbilical cord
+	
+#if you have time or bored. else good enough for now#ead example portfolios to write own messages
+https://www.themuse.com/advice/the-35-best-personal-websites-weve-ever-seen
+
+
+					
+#if you have time or bored. else good enough for now#			write transcript/speech for video							
+#if you have time or bored. else good enough for now#			make video (in ogg, webm, and mp4 with sound on all)
+										show the play video button again
+	
+#if you have time or bored. else good enough for now#			update the video link and files for aboutme
+						
+
+						
+					
+									
+		My Ambitions
+#DO NEXT#-remove the check marks and replace with bullets in design make create		
+							work on my ambitions text
+								maybe write about why i chose and want to be an engineer
+									build things, change the world, make it better						
+										
+
+
+		Quote section 2
+						
+			[no new actions]
+
+			
+			
+			
+		My Education
+[if have time]need to hide horizontal scroll for education side pages							
+							
+		
+
+					My Career		
+		
+[if have time]-figure out why the global variable didn't work and had to use local one. See rightSideTextFadeIn().
+#DO LATER#[on hold. fix it only after done with layout] fix media query for career pages for the company descriptions
+
+
+
+						Quote section 3
+			[no new actions]
+
+
+					My Passions
+			#DO NEXT#remove the little quotes and say "Click To View Album" or something. Don't have too many quotes on my website.
+			
+		
+
+							
+				My Skills
+#DO NEXT#maybe lower some of my skills in the % rating a bit to be more credible
+#DO NEXT#remove % labels on websites to make it look abstract
+#if you have time, but you'll need to do fixed element and raise the z-index#add a fade in of quote as you scroll
+
+												
+					Contact Me
+#DO LATER#-maybe fix the contact sections and change the email code somehow to prevent spam bots from getting to it
+			
+
+
+						
+					Credits (designed by)
+#DO LATER#[on hold. fix it only after done with layout] fix media query for designed by section for the smallest screen as well, too much space on top
+
+			
+						Thank You Page
+							#DO NEXT#-remove the music from credit
+						
+						
+														
+								[done]	make a thank you page and thank the following people for teaching me electronics, cooking, photography, web design, etc.
+											
+											my mom
+											my bear
+											google
+											youtube
+											eric thomas
+											Travis Neilson at dev tips
+											Mary Lou from Codrops
+											head first
+											the new boston
+											derek banas from the New Think Tank
+											Cave of Programming from John Purcell
+											David L. Jones from eevblog
+											jeremy blum
+											Aaron Nace of phlearn
+											Chef John (Mitzewich) of foodwishes
+											Melissa Maker of Clean My Space 
+											
+											
+											
+											[nah]dr. sacco
+											[nah]prof. cockum
+											[nah]dr. cheng
+											[nah]dr. chandra
+											[nah]prof. boskovich
+											[nah]bob quintana?
+											[nah]jeff morton?
+											[nah]john lee?
+
+											
+											
+											
+									[done]add a parallax reveal for the credits section
+										http://www.thecssninja.com/css/reveal-effect
+										http://codepen.io/bassta/pen/jPmRWV
+										http://www.thecssninja.com/demo/css_reveal/product.html
+										http://codepen.io/mburgess0899/pen/omafi
+														
+														
+										[done]go back and change the opacity or z-index of the credits section so it doesn't bleed through the other sections. only "turn it on" when you scrolled near that area
+														
+														
+													[if have time] have a special thanks to section
+														professor cockrum
+														dr. sacco
+														dr. cheng
+														eevblog
+														jeremy blum (for rover code)
+														dev tips
+														Kevin Darrah
+														codedrops
+														derek banas (for rover code)
+														
+
+
+					Footer	
+#DO NEXT#-fix facebook share to show real like count
+#DO NEXT#-test social media and donate buttons
+					
+					
+					
+					
+						General
+#DO NEXT#-submit site to googlebot
+#DO NEXT#update website with any of my sis's comments
+#DO NEXT#-learn some seo
+https://moz.com/learn/seo/meta-description
+https://developers.facebook.com/docs/sharing/webmasters
+#DO NEXT#-add meta decription for facebook/google searches
+http://stackoverflow.com/questions/6138780/facebook-share-button-and-custom-text
+#DO NEXT#-submit site to google search engines
+https://blog.kissmetrics.com/get-google-to-index/
+#DO NEXT#-go back and make pics smaller to save memory (like album and intro pic), then reupload the files
+#DO NEXT#-update linked in as well
+#DO NEXT#-update resume, no redesign for now as it will change again
+	-don't put band level or clearance level or phone number on my website
+#DO NEXT#-test web analytics, check out if google analytics is accurately setup and the counts increment correctly with page visits
+#DO LATER#-when launch only send to friends and people i thanked and have it in my back pocket when others ask about my web skills. else keep it a personal site!
+#DO LATER#-send lisa frias dean my website when i launch it  
+
+
+			
+
+
+
+
+
+
+
+
+
+-----------------------
+Completed
+-----------------------
+
+
+				Nav Bar						
+						[done]update the active class of the nav bar as the page is scrolled to that section											
+						[nah, no time. good enough]-upgrade the nav bar and not use bootstrap
+								[nah, good enough] http://tympanus.net/Development/FullscreenOverlayStyles/index3.html
+							[nah, no time. good enough]-make it a side menu bar on mobile
+							
+
+		Intro section
+						[done]have the intro text fade in after page load (in two parts)
+							[done]disable scrolling until the animation is done
+						parallax this section
+						[done] take a high key head shot, just good enough
+						[done] add high key photo into website
+							[nah]fix/scale background image of intro page
+							
+							
+		Quote section 1
+						[done]background image that shows a path
+						[done]take or find a background image						
+							"The journey of a thousand miles begins with one step."
+							Lao Tzu
+
+			[done]parallax the main quote to stick in one place but fade out with scroll
+
+			
+				
+					About Me						
+
+									
+[done]swap the video section in my ambitions and move it to the about me
+						[done]take the professional pic and use that for ambitions
+					use a casual pic/video for about me
+					use the image as a link to a video					
+					tell your personal story humbly
+						make it tear jerk. make it sticky. end with happy and possibilities.
+						talk about poor, adversity, persistence, determination
+						-they likes stories they can relate to or resonate with
+						-tr yto shoot a video without public faces since you don't have a waiver
+							-maybe shoot a video where you are reading as you're waiting for the train at the metro station (no need to actually hop on the train or buy a ticket)
+								-shoot it in the daytime when there is less people. watch for homeless and thugs. bring pepper spray.
+							-shoot a scene where you're coding and get a phone call and pretend to answer it and say you can't hang out this weekend.
+							-shoot a scene where you look at your wallet and then close a sales ad from online to save money			
+							-shoot a scene of me entering in my cheap honda civic (make sure license plates aren't shown)
+							-shoot a scene of me eating cheap good
+							-shoot a scene at me reading at a library (maybe if they let me video tape)
+							-try not to make the video too sad, just good enough so they get the point that you're a hard worker. but you're not asking for pity.
+						-don't be like an interview but an autobiography story
+							[done]add a popup video with me talking to the visitor (maybe use jquery library or something for that)
+							[done]research jquery library for video popup										
+[NAH, can't really test it, so oh well] add a poster picture for the video
+									narrate some parts as i am silient in the film, and talk in some parts
+						[done]move text, some if it is cut off in the about me section									
+						
+						
+						
+			My Ambitions
+						[done, nah, fade in effect good enoigh] slide up the banner and fade in the text (imagine, design, create) on scroll to section
+						[done]maybe redo my intro or about me to something like this
+						[done]	Richard Nguyen
+									Imagine-Design-Create
+							(try to keep the website all in 1st person or third person)
+							http://ellensriley.com/#about
+
+
+
+		Quote section 2
+						
+				[done] Decide what you want, decide what you are willing to exchange for it. Establish your priorities and go to work.
+							H. L. Hunt
+							
+							
+		
+		My Education
+					[done] redo the slider page to it starts out on the right side and slides in to the left side					
+					[done] 	make the background white due to logos
+					[done] change image from circle to square with rounded corners (to go along with the theme)
+like https://www.youtube.com/watch?v=2CrCyyJhkwc&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI&index=13 see 29:40
+							[done]add a slider div
+					make the return arrow position responsive (i.e. clean it's position when resized)
+							[done]-make it fly out to the right									
+							[done]-then work on the side page slide for the education page
+							[done]-add the X with fontawesome
+							[done]animate the transition
+							[done]clean up the code by caching the selectors							
+							
+							
+							
+
+					My Career				
+				[done] -when doing media queries, remove the picture from the careers section slidein page
+				-if want, maybe can put the image as a background image
+
+					
+						[done]see script.js under "function openCareerHiddenPages" in the part of the code where it says 	"//media query for javascript" and try to fix it so when it is resized small it will show a full page, but once in full page, when resized back out it will show half a page again
+    
+				
+								[done]-like with http://www.greenwoodcampbell.com/
+								[done]-i think they use a fixed 100% width container, then two divs (one with scroll)
+								[done]-make it fly in from the right (else you'll have a scroll bar in the middle of the page which looks weird)
+									[done]slide in a div that is scollable on half of the page. the other half, have a photo of me working, in school, or working on the hobby
+									[done]allow the user to scroll down and read on one split and have a picture on the other split							
+								[done]-modify jquery code such that when different career links are clicked, different text and background image shows up
+								[done] note: the jquery load page only works when running from a server (and not a file) like http://127.0.0.1:53346/practice16/index.html
+								[done]-fade in the text of the paragraph
+
+											[DONE] add a hover effect
+											[DONE]make the year i was there (i.e. 2008 to present) fade in
+											http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+
+
+						[DONE]fix the centering of the images as well as when you resize the window, the section gets cut off
+						[done] -update the color of the overlay on hover
+						[done] -update text description of the years in each place i worked
+
+
+						[DONE]when i added the hover events the swoosh animation works too fast and doesn't look right. it's too much anyways, so remove it.
+
+							
+						Quote section 3
+									[done]		
+										"Nothing in this world can take the place of persistence. Talent will not: nothing is more common than unsuccessful men with talent. Genius will not; unrewarded genius is almost a proverb. Education will not: the world is full of educated derelicts. Persistence and determination alone are omnipotent."
+										-Calvin Coolidge
+									
+								[nah, no time or camera man] make a black and white video of me
+									working with tools like hot glue gun, wrench, solder iron, etc.
+									reading
+									jotting down notes and sketching
+									coding
+									taking photos?
+									etc.
+									
+						[nah, not needed]	add a poster picture for the video background image												
+						#maybe when have time#	[need to update the video]background video clip of me waking up working in the early morning, fading into working in the day, night, then late night. make the video good enough.
+																							or make a black and white video showing video cuts of me programming, soldering, brainstorming/designing with paper or white board, calculating with a calculator, testing, etc.
+											[done]	make sure the video loops
+
+
+
+
+					My Passions
+						[done]change/rename hobbies to passions
+						[done]change images from circles to rectangles with rounded corners
+						[done]make a grid to show all these hobbies/passions
+						[done, animated in another way, good enough] maybe animate the images to slide up when first scrolled to
+							[done]do picture slide show
+								[done] with maybe something like this http://tympanus.net/codrops/2010/09/08/full-page-image-gallery/
+						[done] update pictures with real ones
+						[done] make thumb nails
+						[done] update thumbnails
+							maybe list photography
+								[nah for now, no time, keep it lean] maybe list reading
+									[nah for now, no time, keep it lean]maybe list some books i listened to or read (from tech to business to design)
+									[nah for now, no time, keep it lean]take a pics of all my library cards
+									[nah for now, no time, keep it lean]maybe list cooking
+							[done] maybe list fitness
+							
+							[done] take a pic of me doing pullups at the park					
+							
+							
+							
+							
+							
+
+				My Skills				
+						[done]move the download resume button to the skills section
+				[done] list skills
+						technical writing
+						hardware
+						software
+						communications
+						leadership
+						[done]animate the bar graphs when first scrolled to that section
+							then update notes here:
+							K:\Design Software\Web Development\HTML 5 Video Converter
+							and notes to myself on "10-11-2015" with "#tech #website #html5 video" tagged
+				[done] find out what skills i want to list
+
+				[done] Quote section 4
+						[done]	background image that shows a footsteps in dirt (try to have it tie in with first image where the journey of a thousand miles)
+									"Do not go where the path may lead, go instead where there is no path and leave a trail."
+									Ralph Waldo Emerson					
+												
+									
+			
+			[nah, good enough]maybe add light shine effect on resume button to animate once in a while
+			similar code to:
+			http://www.purplesquirrels.com.au/2013/04/hover-shine-effect-with-pure-css/		
+							
+												
+															
+			Contact Me					
+						[done]add contact info
+							[done, nah i will do it differently]make it big like http://www.greenwoodcampbell.com/contact/
+						[done]no  animation
+						[done] add icons like from font awesome or bootstrap			
+
+			
+						
+		Credits (designed by)
+					[done]put the svg signature animation here			
+					[done]pseudocode
+						[done]scroll detect the top of the section
+						[done]detect screen size
+						[done]load the svg or fade in image depending on screen size
+						
+						
+						[nah, too much effort]create cinemagraph for credits page
+						https://www.youtube.com/watch?v=rRdO3W8fH8o
+						http://lifehacker.com/the-complete-guide-to-making-animated-gifs-1503276993
+						https://www.youtube.com/watch?v=4qxdkXG_tec
+						https://www.youtube.com/watch?v=HQb-wy4Yo4M&list=PLUc5UfhnNGYIZxgH4pRl8upQQQN-VKsWQ
+						https://www.youtube.com/watch?v=L6OeX46MsuE
+						https://www.youtube.com/watch?v=X6pfeLmYqTY#t=11.64075
+						http://content.photojojo.com/tutorials/how-to-make-cinemagraphs-photos-that-move/
+						https://www.youtube.com/watch?v=TKA4cqv0IjE
+						http://www.tutoriallounge.com/2012/01/14-cinemagraph-tutorials-provoke-your-attentions/
+						http://www.digitalartsonline.co.uk/tutorials/photoshop/create-cinemagraph-in-photoshop/
+						https://www.youtube.com/watch?v=HQb-wy4Yo4M&list=PLUc5UfhnNGYIZxgH4pRl8upQQQN-VKsWQ
+						https://www.youtube.com/watch?v=4qxdkXG_tec
+						https://www.youtube.com/watch?v=rRdO3W8fH8o
+						https://vimeo.com/23163811
+						http://apps.corel.com/ap/2011_ENP/au_learnhow_Cinemagraph.htm#psp
+						http://www.adorama.com/alc/0013110/article/How-To-Make-A-Cinemagraph
+						create a credits page, maybe use cinemagraph and rolling credits
+						http://www.html.am/html-codes/marquees/css-scrolling-text.cfm
+
+				
+					Footer				
+						[done]fix the alignment of the items
+						[done]add a donate link with paypal
+[nah, good enough]redo sharethis and try and use addthis instead
+	https://www.hyperlinksmedia.com/seo-houston/seo/addthis-vs-sharethis/
+	sign up (with a better email address) for share this and reconfigure the buttons to the ones i want
+		twitter, facebook, email, reddit, pinterest, google+, linkedin, digg, stumbleupon, newsvine
+
+												
+
+
+						General						
+				[done] get the nav bar to close after a link has been picked (when in media query/mobile mode)					
+				[even more later, i found it really happens only in chrome, so skip it. it's a chrome issue]fix laggy scroll due to window scroll event? or something else. not sure.
+				[finding it's something in the style.css, not sure what. could be a mix with javascript as well]can debug this by deleting javascript and adding stuff back in, etc.
+				
+						http://stackoverflow.com/questions/7392058/more-efficient-way-to-handle-window-scroll-functions-in-jquery
+						http://stackoverflow.com/questions/23547055/reducing-lag-on-scroll-event
+					[done] remove unwanted quote sections					
+					[done] rewrite the window scroll detect and make it generic and put it in utils and use it for barGraphAnimation() and initialSignatureLoad()
+						note: don't put security clearance status on the web
+						[done] style the nav bar
+						[done, nah, contact me is good enough]add a hire me button
+						make it responsive
+						make it cross browser
+						add content to the webpage
+						[nah, good enough]make a javascript loader if required
+						[done]pick the color theme with accents
+							[done]make it a dark grey (and not black) and white theme with blue accent (but can be changed for future updates)
+						theme the font/text styles
+						[done]add an on page load
+							Pade Load White Fade In
+							http://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load
+							http://jsfiddle.net/SO_AMK/VV2ek/
+							http://jsfiddle.net/SO_AMK/a9dnW/
+														
+							$(document).ready(function() {
+
+									$('body').css('display', 'none');
+
+									$('body').fadeIn(1000);
+
+
+								});
+
+								https://css-tricks.com/forums/topic/fade-out-between-pages/
+
+							
+
+					[nah, good enough]optimize the javascript so once a part of a page is loaded, it won't check the scrollTop anymore if it's a latching load	
+	
+	
+
+
+
+						[nah, not trivial when want to fix a div and not just the background image] if have time]try css curtain effect on the svg section
+							use fix position, z-index to control what comes on top of what, and css pseudo to add it in right before an element
+							make the credits div fixed but initially zindex below the video
+								try to use jquery to change the css of the credit div to change the zindex when scrolled by X amount
+								http://blog.grayghostvisuals.com/css/fixed-curtains-pattern/
+								http://line25.com/tutorials/create-a-cool-website-with-fancy-scrolling-effects
+								http://codepen.io/of6/pen/dorPRX
+								http://stackoverflow.com/questions/23571578/chrome-issue-with-background-attachment-fixed-and-position-fixed-elements
+								Note: This is JQuery/Javascript, not HTML/CSS but it's regarding the same topic
+								http://stackoverflow.com/questions/21791512/how-to-make-a-fixed-positioned-div-until-some-point
+
+
+
+
+							
+							
+						[nah, good enough]Incorporate CSS Preload
+							http://codepen.io/Antoine-360pixel/pen/atCpJ
+							http://tympanus.net/Tutorials/PagePreloadingEffect/index2.html
+							https://ihatetomatoes.net/create-custom-preloading-screen/
+							https://ihatetomatoes.net/demos/css3-preloader-transition/
+							they fake the preloader. they said to use these libraries if you don't want to fake it
+							https://github.com/desandro/imagesloaded
+							https://github.com/thinkpixellab/PxLoader
+						[nah]add a share me button like here
+								http://www.boeing.com/careers/							
+						
+				
+							[done]make the nav bar have a border highlight color instead of the whole background color change
+							example: http://podshare.co/
+
+					[done]paypal donate button
+						https://www.paypal.com/webapps/mpp/get-started/donate-button#step-by-step
+
+					[done]make menu opaque like this
+					http://www.hannahsilverton.com/
+					[done] fix on small window size, at the footer, the background video shows through. fix this so the video doesn't show through.	
+					[done]fix svg signature as the R is getting cut off. fix the height of the svg
+					[done]fix the size height bounce from section to section on the nav bar
+					[done]move the social media buttons to the contacts page
+[nah, good enough] do social media buttons like on dev tips
+https://www.youtube.com/watch?v=YC6PSSCIVjQ&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI&index=22
+or	
+[nah, good enough] if have time make the social media icons all black and white and on hover they turn to the accent color and pop out the description
+example: http://podshare.co/
+[nah, good enough] spell out social media (i.e. linkedin) links
+http://www.pascalvangemert.nl/#/contact
+
+
+						
+	
+
+
+
+	
+[done]need to add hover effects with some initial title on the images so people will want to hover over then click on the images in education, career, 	
+
+
+
+
+contact section
+	[done]invite them to contact you
+write self message like this site
+http://www.stephaniepal.com/
+
+						
+-----------------------
+#future ideas and improvements
+-----------------------
+
+#website update/redesign ideas
+-maybe make a simple professional site one day with a pic of me being confident
+see video https://www.youtube.com/watch?v=-DNv3PEuPO8
+
+-maybe aim to make it more professional, else just let friends look at it. people are too judgmental.
+
+-note: can move the "x" close button on some of the slide in pages, etc. and make it a little lower since phones have a menu bar at the top. (maybe). but every phone is different.
+-you may want to change the delay time of text fading in for mobile sites. maybe,
+
+-----------------------
+#old notes and references (just for archive)
+-----------------------
+				
+code a bootstrap personal page
+	use videos as needed
+	upgrade it later. good enough for now
+
+	
+	get content (pics) for careers, education, passions, and quote sections
+	style the backgrounds next
+	
+	
+maybe add the song body and soul to play when you reached the contact and credits section of the webpage
+https://www.youtube.com/watch?v=Ko2c5yJp8G8
+
+
+
+use gradient generator for div color styling
+http://www.colorzilla.com/gradient-editor/
+or sections can use a nice background image like this
+http://www.hannahsilverton.com/ see let's talk
+
+
+
+
+maybe redo contact form to use icons like this guy
+	also check out his resume page as well
+http://www.albinotonnina.com/
+
+	
+fade in pic on scroll
+example, see portfolio section: http://www.hannahsilverton.com/
+
+
+list skills: hardware, software, design, testing and troubleshooting, analysis, technical writing, communication, leadership
+
+
+change accent colors
+	grab color from blue tie and use it
+for hero pic, use high key blue casual
+	maybe hero pic is blue glasses and shirt and black and white pic
+for about me use form blue tie low key
+
+	
+		
+		
+	
+    
+    
+		
+
+for the passions background video make one like this
+http://www.anthonydesigner.com/
+

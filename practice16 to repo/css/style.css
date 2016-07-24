@@ -1,0 +1,2690 @@
+/*
+white base color 1
+rgb(28,100,248) accent color 1, hex equivalent is #1C64F8
+rgb(105,149,250) accent color 2
+#cccccc base color 2
+*/
+
+/*
+Tips:
+To review the website code
+-skim through the HTML to understand the structure and sections
+    -also note what stylesheets and javascript files exist
+    -note the order of the stylesheets as well since the last one on the bottom takes precence if the style has the same css specificity
+-skim through all the CSS (in order, know the last one called out in the html takes precedence with the same css specificity) to understand the styles on each section
+-skim through the javascript files to know what functions exist and basics of what they're doing
+-then go back to where you want to edit and try to find the CSS and Javascript controlling it
+-you may want to turn on background pink and use inspect element for help
+*/
+
+body {
+    padding-top: 50px;
+    color: white;
+    overflow-x: hidden;/*needed to hide the horizontal scroll bars for IE*/
+    background-color: black;/*to allow fade in from black*/
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+.section_heading
+{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+}
+@media screen and (max-width: 430px) {
+    .section_heading
+    {
+        font-size: 22px;
+    }
+}
+
+
+
+
+.quote_text
+{    
+    font-family: 'Josefin Sans', sans-serif;
+}
+a, a:hover, a:focus, a:visited
+{
+    text-decoration: none;
+}
+
+a:focus {
+  outline-style: none;
+}
+
+
+.anchor-offset:before {/*add to offset the fixed title bar*/
+    content:"";
+    display:block;
+    height: 150px; /* fixed header height*/
+    margin:-150px 0 0; /* negative fixed header height */
+    visibility: hidden;/*uncomment this when done debugging*/
+    /*background-color: pink;/*debug*/
+    position: relative;
+}
+
+
+
+
+/*========================nav_bar========================*/
+
+
+.navbar {
+    border: none;
+}
+
+
+/*use the inverse colors of the nav bar: nav bar*/
+.navbar-inverse{
+    background-color: rgba(0,0,0, 0.8);
+}
+
+
+.navbar-nav > li
+{
+    border-bottom: 6px solid transparent;/*Add a border bottom at all times so the height of the nav bar stays consistent*/
+}
+
+
+#navbar-brand
+{
+    /*color: rgb(105,149,250);*/
+    /*background-color: grey;*/
+}
+
+/*nav hover colors*/
+.navbar-inverse .navbar-nav > li:hover, .navbar-inverse .navbar-nav > li:focus
+{
+    font-weight: bold;
+    background-color: rgba(0,0,0, 1);
+}
+
+/*use the inverse colors of the nav bar: active link*/
+.navbar-inverse .navbar-nav > .active,
+.navbar-inverse .navbar-nav > .active:hover,
+.navbar-inverse .navbar-nav > .active:focus {
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    border-bottom: 6px solid rgb(28,100,248);/*accent color 1*/
+}
+
+
+
+
+
+
+/*========================nav_spacer========================*/
+
+/*used to have space out the intro section from the nav bar*/
+.nav_spacer{
+    height: 0px;
+    /*background-color: red;*/
+}
+
+
+/*========================intro========================*/
+
+.intro{
+    color: #333333;
+    position: relative;
+    background-color: white;
+    height: 900px;/*added height to be used for scrollUpdateActiveClass() in jquery*/
+    background-attachment: fixed;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+
+.intro .section
+{
+    max-width: 1400px;
+    margin: 0px auto;   
+    height: 768px;
+    /*background-color: green; for debug*/
+}
+
+.intro .col-md-12
+{
+    position: relative;
+    height: inherit;
+}
+
+
+
+.intro .introText_1{
+    position: absolute;
+    font-size: 2.5em;
+    top: 5%;
+    left: 5%;
+    transform: translateX(5%);
+    text-align: left;    
+    color: #6699ff;
+}
+.intro .introText_2_span{
+    position: absolute;
+    top: 65%;
+    margin-left: 50vw;
+    text-align: left;
+    width: 30vw;
+    color: #6699ff;
+}
+.intro .introText_2{
+    display: inline-block;
+    font-size: 2.5em;
+}
+.intro .introText_3{
+    /*width: 80px;/*make this wider than the text that will fade in so it doesn't shift*/
+    display: inline-block;
+    font-size: 2.5em;
+}
+
+
+
+
+
+
+
+
+/* Media queries for about_me section */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1750px) {
+    
+    .intro .introText_2_span{
+        margin-left: 55vw;
+        width: 30vw;    
+    }    
+}
+    
+
+@media screen and (max-width: 1550px) {
+    
+    .intro .introText_2_span{
+        margin-left: 60vw;
+        width: 35vw;
+
+    }    
+}
+
+
+@media screen and (max-width: 1340px) {
+    
+    .intro .introText_2_span{
+        margin-left: 60vw;
+        width: 37vw;
+
+    }
+}
+
+
+
+@media screen and (max-width: 1210px) {
+    
+    .intro .introText_2_span{
+        margin-left: 62vw;
+        width: 35vw;
+
+    }
+    
+
+    .intro .introText_1{
+        font-size: 2em;
+    }
+
+    .intro .introText_2{
+        font-size: 2em;
+    }
+    .intro .introText_3{
+        font-size: 2em;
+    }
+    
+}
+
+ @media screen and (max-width: 990px) {
+    
+    .intro .introText_2_span{
+        margin-left: 30vw;
+        margin-top: 65px;
+        width: 60vw;
+
+    }
+}
+
+ @media screen and (max-width: 610px) {
+    
+    .intro .introText_2_span{
+        margin-left: 10vw;
+        margin-top: 65px;
+        width: 80vw;
+
+    }
+}
+ @media screen and (max-width: 440px) {
+    
+    .intro .introText_2_span{
+        margin-left: 0vw;
+        margin-top: 65px;
+        width: 100vw;
+
+    }
+
+    .intro .introText_1{
+        font-size: 1.4em;
+    }
+
+    .intro .introText_2{
+        font-size: 1.4em;
+    }
+    .intro .introText_3{
+        font-size: 1.4em;
+    }
+         
+     
+     
+     
+}
+
+/*========================about_me========================*/
+
+
+.about_me
+{
+    padding-top: 70px;/*need at least 70px top padding to offset the fixed title bar*/
+    padding-bottom: 70px;
+    background-color: white;
+    color: rgb(28,100,248);/*accent color 1*/
+    font-size: 18px;
+    position: relative;
+}
+
+
+.about_me .section
+{
+    max-width: 1400px;
+    margin: 0px auto; 
+}
+
+.about_me .col-md-6
+{
+    height: 870px;
+
+}
+
+
+.about_me .col-md-6 .about_me_text
+{
+    display: block;
+}
+
+    
+
+.about_me .fadeInContainer
+{
+    opacity: 0;
+}
+
+
+/*NOTE: The code below is outdated and may need major rework*/
+/*VIDEO BUTTON*/
+/*"a" tag play button*/
+
+.action {
+    display: none;/*<!--HIDEVIDEOFORNOW, DELETE THIS LINE WHEN WANT TO TURN IT BACK ON*/
+    color: rgb(28,100,248);/*accent color 1*/
+    cursor: pointer;
+    font-size: 1.15em;
+}
+
+.about_me a.action:hover, .about_me a.action:focus
+{
+    background-color: rgb(28,100,248);/*accent color 1*/
+    color: white;
+}
+
+
+.action--close {
+    color: rgb(28,100,248);/*accent color 1*/
+}
+
+/*END OF VIDEO BUTTON*/
+
+
+
+
+
+.about_me .col-md-6 .img{
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-image: url("../img/about-me-lg.jpg");/*400x400*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+.about_me .col-md-6 .about_me_text
+{
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+/* Media queries for about_me section */
+@media screen and (max-width: 1400px) {
+
+    .about_me .col-md-6
+    {
+        height: 1000px;
+    }
+}
+ @media screen and (max-width: 1200px) {
+
+    .about_me .col-md-6
+    {
+        height: 1100px;
+    }
+}   
+ @media screen and (max-width: 992px) {
+
+    .about_me
+    {
+        height: 1400px;
+    }
+     
+    .about_me .col-md-6
+    {
+        height: auto;
+    }
+
+
+    .about_me .col-md-6 .img{
+        margin-top: 240px;
+    }
+     
+     
+     
+    .about_me .col-md-6 .about_me_text
+    {
+        margin-top: 500px;
+    }
+     
+}   
+ @media screen and (max-width: 780px) {
+
+    .about_me
+    {
+        height: 1500px;
+    } 
+}   
+ @media screen and (max-width: 660px) {
+
+    .about_me
+    {
+        height: 1600px;
+    }     
+}   
+@media screen and (max-width: 595px) {
+
+    .about_me
+    {
+        height: 1700px;
+    }     
+}   
+@media screen and (max-width: 525px) {
+
+    .about_me
+    {
+        height: 1800px;
+    }     
+}   
+@media screen and (max-width: 490px) {
+
+    .about_me
+    {
+        height: 1900px;
+    }     
+}   
+@media screen and (max-width: 475px) {
+
+    .about_me
+    {
+        height: 1800px;
+    }     
+    
+    .about_me .col-md-6 .img{
+        margin-top: 170px;
+        height: 300px;
+        width: 300px;
+        background-image: url("../img/about-me-med.jpg");/*300x300*/    
+    }
+    
+    .about_me .col-md-6 .about_me_text
+    {
+        margin-top: 350px;
+    }       
+}   
+@media screen and (max-width: 430px) {
+
+    .about_me
+    {
+        height: 2050px;
+    }    
+}   
+@media screen and (max-width: 370px) {
+
+    .about_me
+    {
+        height: 2050px;
+    }    
+    .about_me .col-md-6 .img{
+        margin-top: 120px;
+        height: 200px;
+        width: 200px;
+        background-image: url("../img/about-me-sm.jpg");/*200x200*/ 
+    }    
+    .about_me .col-md-6 .about_me_text
+    {
+        margin-top: 250px;
+    }   
+}   
+@media screen and (max-width: 350px) {
+
+    .about_me
+    {
+        height: 2150px;
+    }    
+}   
+@media screen and (max-width: 330px) {
+
+    .about_me
+    {
+        height: 2300px;
+    }    
+} 
+@media screen and (max-width: 315px) {
+
+    .about_me
+    {
+        height: 2400px;
+    }    
+} 
+@media screen and (max-width: 300px) {
+
+    .about_me
+    {
+        height: 2500px;
+    }    
+} 
+@media screen and (max-width: 290px) {
+
+    .about_me
+    {
+        height: 2650px;
+    }    
+} 
+/*========================quote_01========================*/
+
+.quote_01{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-image: url("../img/quote_01.jpg");
+    background-attachment: fixed;/*use to keep background in place for parallax style scrolling*/
+    overflow: hidden;/*helps the parallax effect hide the elements when passing under another section*/
+}
+
+
+
+
+.quote_01 .container-fluid{
+    position: relative;
+    height: 768px;
+    margin-top: -70px;/*need at least -70px top padding to offset the fixed title bar offset*/
+    max-width: 1400px;
+
+}
+
+.quote_01 .section{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    text-align: center;
+
+}
+
+
+
+.quote_01 h1{
+    margin-top: -250px;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+.quote_01 p.lead{
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-right: 50px;
+    font-size: 2em;
+    text-align: right;
+}
+
+
+
+/* Media queries for quote_01 section */
+@media screen and (max-width: 1350px) {
+    
+    
+    .quote_01 .container-fluid{ 
+        height: 600px;
+    }
+    
+    .quote_01 h1{
+        margin-top: -200px;
+        font-size: 2.1em;        
+    }
+    .quote_01 p.lead{
+        margin-top: -10px;/*the smaller the number the higher the element is*/
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 1290px) {
+    
+    
+    .quote_01 .container-fluid{ 
+        height: 600px;
+    }
+    
+    .quote_01 h1{
+        margin-top: -250px;
+        font-size: 2.1em;
+        /*background-color: red;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -10px;/*the smaller the number the higher the element is*/
+        font-size: 1.8em;
+    }
+}
+
+
+/*at 1072px need to change scroll speeds*/
+
+@media screen and (max-width: 1130px) {
+
+    
+    .quote_01 .container-fluid{
+        height: 500px;
+    }
+    .quote_01 h1{
+        margin-top: -250px;
+        font-size: 2.1em;   
+        /*background-color: blue;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -30px;/*the smaller the number the higher the element is*/
+        font-size: 1.8em;
+        left: 50%;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+    
+    
+
+    .quote_01 .container-fluid{
+        height: 500px;
+    }
+    
+    
+    
+    .quote_01 h1{
+        margin-top: -300px;
+        /*background-color: green;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -30px;/*the smaller the number the higher the element is*/
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    
+    
+    
+    .quote_01 .container-fluid{
+        height: 500px;
+        
+    }
+    
+    .quote_01 h1{
+        margin-top: -390px;
+        /*background-color: skyblue;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -550px;/*the smaller the number the higher the element is*/
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    
+    
+    
+    .quote_01 .container-fluid{
+        height: 500px;
+        
+    }
+    
+    .quote_01 h1{
+        margin-top: -900px;
+        /*background-color: crimson;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -70px;/*the smaller the number the higher the element is*/
+    }
+    
+}
+
+
+@media screen and (max-width: 590px) {
+    
+    
+    
+    .quote_01 .container-fluid{
+        height: 500px;
+        
+    }
+    
+    .quote_01 h1{
+        margin-top: -1000px;
+        /*background-color: brown;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -70px;/*the smaller the number the higher the element is*/
+    }
+    
+}
+
+
+@media screen and (max-width: 440px) {
+    
+
+
+    .quote_01 .container-fluid{
+        height: 700px;
+        
+    }
+    
+    .quote_01 h1{
+        margin-top: -1300px;
+        /*background-color: purple;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: 100px;/*the smaller the number the higher the element is*/
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 410px) {
+    
+
+        .quote_01 .container-fluid{
+        height: 700px;
+        
+    }
+    
+    .quote_01 h1{
+        margin-top: -1300px;
+        background-color: aquamarine;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -1200px;/*the smaller the number the higher the element is*/
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+
+    .quote_01 .container-fluid{
+        height: 700px;
+        
+    }
+    
+    .quote_01 h1{
+        margin-top: -2200px;
+        background-color: purple;/*keep around for debug*/
+    }
+    .quote_01 p.lead{
+        margin-top: -600px;/*the smaller the number the higher the element is*/
+    }
+}
+
+
+/*========================ambitions========================*/
+
+
+
+.ambitions
+{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    padding-bottom: 70px;
+    background-color: rgb(28,100,248);/*accent color 1*/
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.ambitions .section
+{
+    max-width: 1400px;
+    margin: 0px auto;    
+}
+
+.ambitions .col-md-6
+{
+    height: 650px;
+}
+
+
+.ambitions .col-md-6 .ambitions_text
+{
+    display: block;
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.ambitions .fadeInContainer
+{
+    opacity: 0;
+}
+
+.ambitions .col-md-6 .img{
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    background-image: url("../img/my-ambitions-lg.png");/*400x400*/       
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.ambitions .col-md-6 .myambitions_img_title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 400px;
+    height: 42px;/*by trial and error to work with the bottom property to align the batter to the bottom*/
+    bottom: 5px;/*compensate for the height of the border*/
+    text-align: center;
+}
+
+.ambitions .col-md-6 .myambitions_img_title p{
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(28,100,248);/*accent color 1*/
+    background-color: rgba(256,256,256,0.8);/*transparent black*/
+    border-top: 5px solid rgb(28,100,248);/*accent color 1*/
+    border-radius: 0px 0px 40px 40px;
+}
+
+
+
+.ambitions .col-md-6 .ambitions_text p
+{
+    margin-top: 20px;
+}
+
+
+
+.ambitions .col-md-6 .ambitions_text .quote_author
+{
+    display: inline-block;
+    right: 30px;
+    position: absolute;
+}
+
+
+
+
+
+/* Media queries for ambitions section */
+
+
+@media screen and (max-width: 1210px) {
+
+    .ambitions .col-md-6
+    {
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .ambitions .col-md-6
+    {
+        height: 750px;
+    }
+
+}
+@media screen and (max-width: 1120px) {
+
+    .ambitions .col-md-6
+    {
+        height: 800px;
+    }
+
+}
+@media screen and (max-width: 992px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1070px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 750px;
+    }
+}
+@media screen and (max-width: 875px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1150px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 820px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1250px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 900px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1350px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1000px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1450px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1100px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1350px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1075px;
+        height: 300px;
+        width: 300px;
+        background-image: url("../img/my-ambitions-med.png"); /*300x300*/     
+    }
+    .ambitions .col-md-6 .myambitions_img_title{
+        width: 300px;
+        bottom: 5px;/*compensate for the height of the border*/
+      
+    }
+    .ambitions .col-md-6 .myambitions_img_title p{
+        border-radius: 0px 0px 25px 25px;        
+    }    
+}
+@media screen and (max-width: 475px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1450px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1140px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1450px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1140px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1450px;
+    } 
+    .ambitions .col-md-6 .img{
+        height: 200px;
+        width: 200px;
+        background-image: url("../img/my-ambitions-sm.png");/*200x200*/
+        margin-top: 1175px;
+    }
+    .ambitions .col-md-6 .myambitions_img_title{
+        width: 200px;
+        bottom: 0px;/*compensate for the height of the border*/
+    }
+    .ambitions .col-md-6 .myambitions_img_title p{
+        font-size: 12px;
+        border-radius: 0px 0px 20px 20px;        
+    }
+}
+@media screen and (max-width: 360px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1550px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1240px;
+    }
+}
+@media screen and (max-width: 335px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1650px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1360px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1650px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1440px;
+    }
+}
+@media screen and (max-width: 295px) {
+    .ambitions .col-md-6
+    {
+        height: auto;    
+    }
+    .ambitions
+    {
+        height: 1700px;
+    }
+    .ambitions .col-md-6 .img{
+        margin-top: 1500px;
+    }
+}
+
+/*========================quote_02========================*/
+
+.quote_02{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    position: relative;
+    color: white;
+    background-color:#6699ff;/*accent color 2*/
+    /*add pic here!! background-image: url("http://placehold.it/1280x720");   
+    background-size: cover;*/
+    text-shadow: 11px 6px 8px rgba(28,100,248,0.7);
+}
+
+
+
+
+.quote_02 .container-fluid{
+    position: relative;
+    height: 768px;
+    margin-top: -70px;/*add -70px top padding to offset the fixed title bar offset*/
+    max-width: 1400px;
+}
+
+.quote_02 .section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.quote_02 .section .animated{
+    opacity: 0;/*on default*/
+}
+
+
+
+.quote_02 h1{
+    font-size: 2.5em;
+}
+
+.quote_02 .lead{
+    padding-top: 20px;
+    padding-right: 50px;
+    font-size: 2em;
+    text-align: right;
+}
+
+
+/*========================education========================*/
+
+
+.education
+{
+    overflow: hidden;
+    position: relative;
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/  
+    color: rgb(28,100,248);/*accent color 1*/
+}
+
+
+
+.education a
+{ 
+    color: rgb(28,100,248);/*accent color 1*/
+    font-weight: 600;
+}
+.education a:hover, .education a:focus
+{ 
+    text-shadow: 9px 5px 14px rgba(105, 149, 250, 1);
+}
+
+
+.education-container
+{
+    margin-top: -70px;/*from the padding in education*/
+    padding-top: 70px;/*to compensate for the margin*/    
+    position: relative;
+    width: 200%;
+    background-color: white;
+	left: -100%;
+}
+
+.education .smackIn
+{
+    transform: scale(0);/*initialize smackIn state*/
+}
+
+
+.education .main 
+{
+    position: relative;
+    width: 50%;   
+    height: 500px;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    left: 50%;
+}
+
+
+.education .main .slide
+{
+    position: absolute;   
+    right: 30px;
+    top: 300px;
+    z-index: 1;/*bring the arrow on top so it can be clicked*/    
+}
+
+.education .main .section_heading
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.education .main .section
+{
+    max-width: 1400px;
+    margin: 0px auto;    
+}
+.education-container .side-pages-slide
+{
+    display: inline-block;
+    height: auto;    
+}
+
+.education .main .img{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    opacity: 1;/*show on default*/
+}
+
+
+.education .main .img-cal_poly_pomona{
+    background-image: url("../img/cal-poly-pomona-logo.png");    
+}
+
+
+
+.education .side-page 
+{
+    position: relative;
+    width: 50%;
+    height: 1350px;
+    text-align: center;
+    display: none;/*hide on default*/
+    background-color: white;
+    margin-left: 0%;/*puts it off the the left side off the page*/
+}
+
+
+.education .side-page .section_heading
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 50px;
+}
+
+.education .side-page .return
+/*the exit (close) button is from font awesome*/
+{
+    position: absolute;   
+    left: 30px;
+    top: 300px;
+    z-index: 1;/*bring the arrow on top so it can be clicked*/
+}
+
+.education .side-page .col-md-12 p
+{
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.education .side-page .section
+{
+    max-width: 1400px;
+    margin: 0px auto;
+    
+}
+
+.education .side-page .section .education_text
+{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.education .side-page .img-container
+{
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.education .side-page .img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    opacity: 0;/*hide on default*/
+    border-radius: 10%;
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+}
+
+/*Also see "Caption Style 6" in the codrops.css and script.js*/
+.education .side-page .img-cal_poly_pomona-1{
+    background-image: url("../img/education/first-digital-circuit.jpg");    
+}
+.education .side-page .img-cal_poly_pomona-2{
+    background-image: url("../img/education/senior-project-blinky.jpg");    
+}
+.education .side-page .img-cal_poly_pomona-3{
+    background-image: url("../img/education/grad-me-and-bear.jpg");    
+}
+
+/* Media queries for education section */
+
+
+@media screen and (max-width: 1060px) {
+    .education .side-page 
+    {
+        height: 1350px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .education .main 
+    {        
+        height: 575px;
+    }
+    .education .side-page 
+    {
+        height: 1400px;
+    }    
+     .education .side-page .return
+    {
+        position: static;
+    }
+    .education .side-page .img{
+        margin-bottom: -190px;/*eyeballed value*/
+    }
+}
+@media screen and (max-width: 805px) {
+    .education .side-page 
+    {
+        height: 1500px;
+    }    
+}
+@media screen and (max-width: 560px) {
+    .education .side-page 
+    {
+        height: 1580px;
+    }    
+}
+@media screen and (max-width: 510px) {
+
+    .education .main 
+    {
+        height: 690px;
+    }
+
+    
+    .education .main .slide
+    {
+        display: block;
+        position: static;   
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (max-width: 405px) {
+    .education .side-page 
+    {
+        height: 1680px;
+    }    
+}
+@media screen and (max-width: 430px) {
+
+    .education .side-page .section_heading
+    {
+        line-height: 40px;
+    }
+    
+}
+@media screen and (max-width: 340px) {
+
+    .education .main 
+    {
+        height: 800px;
+    }
+
+    
+    .education .main .slide
+    {
+
+        margin-top: 100px;
+    }   
+   
+}
+@media screen and (max-width: 315px) {
+    .education .side-page 
+    {
+        height: 1800px;
+    }    
+}
+
+
+/*========================career========================*/
+
+/*Also see codrops.css*/
+
+.career
+{
+    overflow: hidden;
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    padding-bottom: 70px;    
+    background-color: rgb(28,100,248);/*accent color 1*/
+    color: white;
+}
+
+
+
+
+
+
+
+.career-container
+{
+    
+    margin-top: -70px;/*from the padding in education*/
+    padding-top: 70px;/*to compensate for the margin*/    
+    min-height: 450px;
+    position: relative;
+
+}
+
+
+.career .swooshIn
+{
+    
+    transform: translate(-2500px, 0px);
+    
+}
+
+.career .main 
+{
+    
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;   
+    
+}
+
+
+
+.career .main .section
+{
+    max-width: 1400px;
+    padding: 0px;
+    margin: 100px auto;
+    
+}
+
+
+
+.career .main figure{
+    margin: 0px auto;    
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.career .main .img{
+    height: 150px;
+    width: 300px;
+    
+}
+
+
+
+.career .main .img-jpl{
+    background-image: url("../img/jpl-logo.png")
+}
+
+
+.career .main .img-hamilton_sundstrand{
+    background-image: url("../img/hamilton-sundstrand-logo.png");    
+}
+
+
+.career .main .img-northrop{
+    background-image: url("../img/northrop_grumman_logo.jpg");
+}
+
+
+
+
+
+.career .hidden-pages
+{
+    position: fixed; 
+    display: none;/*hide on default*/
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+.career .hidden-pages .section
+{   
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.career .hidden-pages .exit
+/*the exit (close) button is from font awesome*/
+{
+    position: fixed;   
+    height: 80px;
+    width: 50%;
+    left: 50%;
+}
+.career .hidden-pages .exit a
+{ 
+    color: white;
+}
+.career .hidden-pages .exit a:hover, .career .hidden-pages .exit a:focus
+{ 
+    color: rgb(28,100,248);/*accent color 1*/
+}
+.career .hidden-pages .exit span
+{
+    position: fixed;   
+    right: 20px;    
+    padding: 10px;
+}
+
+
+.career .hidden-pages .left_side_page
+{
+    height: 100%;
+    position: fixed;
+    display: none;/*hide on default*/
+    width: 50%;
+    left: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animatedBackground 2s ease-out;
+    animation-fill-mode: forwards;/*to allow it to latch the zoom after it's animated*/
+}
+
+
+@keyframes animatedBackground{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.5,1.5);
+    }
+}
+
+
+@keyframes animatedBackground{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.5,1.5);
+    }
+}
+
+
+
+.career .hidden-pages .right_side_page
+{
+    color: white;
+    height: 100%;
+    position: fixed;
+    display: none;/*hide on default*/
+    width: 50%;
+    left: 100%;/*start off from the right*/
+    background-color:#6699ff;/*accent color 2*/
+    overflow-y: scroll;
+    padding-top: 50px;/*to make room for the close/exit button*/
+    padding-bottom: 50px;/*to allow even spacing at the bottom*/
+    padding-right: 80px;/*to make room for the close/exit button*/
+    padding-left: 25px;/*to allow some space on the left*/
+}
+
+
+.career .hidden-pages .right_side_page p
+{
+    display: none;
+    font-size: 35px;
+}
+
+.career .hidden-pages .right_side_page .my_career_info
+{
+    margin-bottom: 100px;
+}
+.career .hidden-pages .right_side_page .company_info
+{
+    font-size: 26px;
+    font-family: 'Special Elite', cursive;
+}
+
+.career .hidden-pages .right_side_page hr
+{
+    display: none;    
+}
+
+
+.career .hidden-pages .right_side_page a
+{
+    color: white;
+    text-shadow: 9px 5px 14px rgb(28,100,248);/* accent color 1, shadows the text*/
+    
+}
+
+.career .hidden-pages .right_side_page a:hover,.career .hidden-pages .right_side_page a:focus
+{
+    font-style: italic;
+}
+/*WORK FROM HERE
+
+NOTE: To turn off the test temporary copy the CAREER MENU TEST section, then delete that part
+
+TO DO:
+
+
+add a return button for the hidden menu
+
+
+write jquery so that when a career link is clicked
+
+change ".career .hidden-pages" from display: none to display: block
+
+change "body" element from default "overflow: scroll;" (i think? just try it) to "overflow: hidden;"
+
+
+change ".navbar" class from default "display: block" (i think? just try it) to "display: none;"
+
+
+for ".career .hidden-pages .section" class change the background image depending on which career link was clicked, it's okay if the image is cut off a bit
+
+for ".career .hidden-pages .right_side p" change class the paragraph text depending on which career link was clicked
+
+write code so when when the return button is click, undo all the changes
+
+
+
+then maybe add transition in and out effects
+    i.e.
+    first do the following
+
+1)
+change ".career .hidden-pages" from display: none to display: block
+
+change "body" element from default "overflow: scroll;" (i think? just try it) to "overflow: hidden;"
+
+
+change ".navbar" class from default "display: block" (i think? just try it) to "display: none;"
+
+
+this will setup the hidden-pages div and put it on top, but it will be empty
+
+2)
+slide in the ".career .hidden-pages .right_side" class
+
+fade in the background color (i.e. white) and then the text
+for ".career .hidden-pages .right_side p" ADD (instead of change, make the default none) class the paragraph text depending on which career link was clicked
+
+
+3)
+fade in from white and zoom out the pic concurrently
+for ".career .hidden-pages .section" class ADD (instead of change, make the default none) the background image depending on which career link was clicked, it's okay if the image is cut off a bit
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+NOTES
+when career menu activated
+
+set this to hide scrolling of the regular page, and only allow career menu scrolling
+body {
+    overflow: hidden;
+}
+hide the nav bar
+.navbar{
+    display: none;
+}
+
+
+then for .career .hidden-pages .section change the background image depending on which career link was clicked, it's okay if the image is cut off a bit
+
+and then for .career .hidden-pages .right_side p change the parapgraph text depending on which career link was clicked
+
+*/
+
+
+
+
+
+
+/*CAREER MENU TEST*/
+
+/*back up then temporary delete this section out when want to turn it off.*/
+
+
+
+
+
+
+
+/*ADD CODE BACK IN HERE*/
+
+
+
+
+/* Media queries for career section */
+@media screen and (max-width: 992px) {
+	.career
+    {
+        overflow: visible;
+        padding-bottom: 350px;   
+    }
+    
+    .career .main .section div
+    {
+        padding-bottom: 30px;
+    }
+
+    .career .main figure
+    {
+        left: 0%;
+        transform: translateX(0%);
+    }
+
+    
+    /*Note: Also see media query for javascript under "openCareerHiddenPages" in style.css*/
+
+
+    .career .hidden-pages .left_side_page
+    {
+        width: 0;
+        height: 0;
+    }
+
+
+
+
+    .career .hidden-pages .right_side_page
+    {
+        left: 0%;
+        width: 100%;   
+    }
+
+
+    .career .hidden-pages .right_side_page p
+    {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .career .hidden-pages .right_side_page p
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .career .hidden-pages .right_side_page p
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 385px) {
+
+    .career
+    {
+        padding-bottom: 400px;      
+    }
+    
+    
+    
+    
+}
+@media screen and (max-width: 300px) {
+    .career .hidden-pages .right_side_page p
+    {
+        font-size: 16px;
+    }
+    .career .hidden-pages .right_side_page .company_info
+    {
+        font-size: 14px;
+    }
+}
+/*END OF CAREER MENU TEST*/
+
+
+
+
+
+/*========================quote_03========================*/
+
+.quote_03{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    padding-bottom: 70px;
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+
+
+.quote_03 .intro_bkgd_vid { 
+    position: fixed;
+    top: 50%;
+ 
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -3;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+}
+
+video { 
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -o-filter: brightness(0.5);
+    -ms-filter: brightness(0.5);
+}
+
+.quote_03 .container-fluid{
+    position: relative;
+    height: 540px;/*768px/2=540px*/
+    max-width: 1400px;
+}
+
+.quote_03 .section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+		  
+.quote_03 .section .animated{
+    opacity: 0;/*on default*/
+}
+
+.quote_03 h1, .quote_03 p{
+    text-align: center;
+}
+.quote_03 .lead{
+    padding-top: 20px;
+    padding-right: 40px;
+    font-size: 2em;
+    text-align: right;
+}
+
+
+
+
+
+/* Media queries for ambitions section */
+
+@media screen and (max-width: 330px) {
+    .quote_03{
+        font-size: 12px;
+    }
+}
+
+
+
+
+/*========================passions========================*/
+
+.passions
+{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    padding-bottom: 70px;
+    background-color: rgb(28,100,248);/*accent color 1, hex equivalent is #1C64F8*/
+    text-align: center;
+    color: white;
+}
+
+
+.passions .section
+{
+    max-width: 1400px;
+    margin: 0px auto;        
+}
+
+
+.passions .section .passions_text
+{
+    padding: 40px;
+    font-size: 24px;
+}
+
+.passions .animated
+{
+    opacity: 0;
+    -webkit-transform: translate3d(0, -5%, 0);/*custom change from -100% to -5%*/
+    transform: translate3d(0, -5%, 0);/*custom change from -100% to -5%*/
+}
+
+/*also see codrops.css Bubba effect*/
+
+
+
+
+.passions .img-container{
+    margin-bottom: 40px;
+}
+
+
+.passions .img{
+    height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+
+
+
+
+.passions .img-cooking{
+    background-image: url("../img/cooking-logo.jpg");    
+}
+
+.passions .img-fitness{
+    background-image: url("../img/fitness-logo.jpg");    
+}
+
+.passions .img-photography{
+    background-image: url("../img/photography-logo.jpg");    
+}
+
+.passions .img-technology{
+    background-image: url("../img/technology-logo.jpg");    
+}
+
+
+@media screen and (max-width: 650px) {
+    .passions .section .passions_text
+    {
+        font-size: 18px;
+    }
+}
+
+
+/*========================skills (abilities)========================*/
+.skills
+{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    text-align: center;
+    background-color: rgb(105,149,250);/*accent color 2*/
+    color: white;
+    font-size: 20px;
+}
+
+.skills .section
+{
+    max-width: 1400px;
+    margin: 0px auto;    
+}
+
+
+.skills .row
+{
+    margin: 40px 0px;
+}
+
+
+.skills .bar_graph_section
+{
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+
+
+.skills .bar, .skills .bar .level {
+    height: 14px;/*height of bar graph*/
+    color: white;/*bar text color*/
+}
+
+
+.skills .bar {
+    /*bar background*/
+    width: 80%;/*width of bar graph*/
+    background:#cccccc;/*base color 2*/
+    margin: 0px auto;/*centers the .bar div. the .level div is a child of .bar*/
+    display: inline-block;
+}
+
+.skills .level {
+    /*amount of bar to animate*/
+    background: rgba(28,100,248,1);/*accent color 1*/
+    width: 0px;/*start with the bar graph with 0 level on page load*/
+}
+
+.skills .bar_label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.skills .start {
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+
+.skills .resume
+{
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+
+
+.skills .resume .resume_btn
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: rgb(28,100,248);/*accent color 1*/
+    margin-top: 5px;
+    border: 2px solid rgb(28,100,248);/*accent color 1*/
+}
+
+
+.skills .resume a:hover, .skills .resume a:focus
+{
+    box-shadow: 4px 4px 20px #000;/*shadows the button*/
+    color: white;
+    background-color: rgb(28,100,248);/*accent color 1*/
+}
+
+
+/*Bar Graph Percentages*/
+
+
+/*0 percent*/
+
+@keyframes bar_0 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+.bar_0.start {
+    animation-name: bar_0;
+    animation-delay: 0s;
+}
+
+
+/*10 percent*/
+
+@keyframes bar_10 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+.bar_10.start {
+    animation-name: bar_10;
+    animation-delay: 0s;
+}
+
+/*20 percent*/
+
+@keyframes bar_20 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+.bar_20.start {
+    animation-name: bar_20;
+    animation-delay: 0s;
+}
+
+
+
+/*30 percent*/
+
+@keyframes bar_30 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+.bar_30.start {
+    animation-name: bar_30;
+    animation-delay: 0s;
+}
+
+
+/*40 percent*/
+
+@keyframes bar_40 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+.bar_40.start {
+    animation-name: bar_40;
+    animation-delay: 0s;
+}
+
+
+
+/*50 percent*/
+
+@keyframes bar_50 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+.bar_50.start {
+    animation-name: bar_50;
+    animation-delay: 0s;
+}
+
+
+
+
+/*60 percent*/
+
+@keyframes bar_60 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+.bar_60.start {
+    animation-name: bar_60;
+    animation-delay: 0s;
+}
+
+/*70 percent*/
+
+@keyframes bar_70 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+.bar_70.start {
+    animation-name: bar_70;
+    animation-delay: 0s;
+}
+
+
+
+/*80 percent*/
+
+@keyframes bar_80 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+.bar_80.start {
+    animation-name: bar_80;
+    animation-delay: 0s;
+}
+
+/*90 percent*/
+@keyframes bar_90 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+.bar_90.start {
+    animation-name: bar_90;
+    animation-delay: 0s;
+}
+
+/*100 percent*/
+@keyframes bar_100 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+.bar_100.start {
+    animation-name: bar_100;
+    animation-delay: 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================quote_04========================*/
+
+.quote_04{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-image: url("../img/quote_04.jpg");
+    background-attachment: fixed;
+    /*add pic here!! background-image: url("http://placehold.it/1280x720");   
+    background-size: cover;*/
+    /*skip for now, no time.       height: 1536px;/*1536 = 768px x 2, used to lengthen the height so the quote fade in with scroll effect can take place*/
+}
+
+
+
+
+.quote_04 .container-fluid{
+    position: relative;
+    height: 768px;
+    margin-top: -70px;/*add -70px top padding to offset the fixed title bar offset*/
+    max-width: 1400px;
+}
+
+.quote_04 .section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.quote_04 .section .animated{
+    opacity: 0;/*on default*/
+}
+
+
+
+.quote_04 h1{
+    font-size: 2.5em;
+}
+
+.quote_04 .lead{
+    padding-top: 20px;
+    padding-right: 50px;
+    font-size: 2em;
+    text-align: right;
+}
+
+
+
+/*========================contact_me========================*/
+.contact_me
+{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: rgb(105,149,250);/*accent color 2*/
+}
+
+
+.contact_me .section
+{
+    max-width: 1400px;
+    margin: 25px auto 60px 0px;
+}
+
+.contact_me h2{
+    margin: 0px;/*add this to remove extra whitespace at the bottom of the footer when using Internet Explorer*/
+}
+
+.contact_me p{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+
+
+.contact_me .row{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact_me .row .section{
+    margin: 0px auto;
+}
+
+
+.contact_me .contact_numbering{
+    font-size: 24px;
+    color: rgb(28,100,248); /* accent color 1, hex equivalent is #1C64F8*/
+}
+
+
+
+
+
+.contact_me [class^=col-md]
+{
+    height: 100px;
+    position: relative;
+}
+
+
+.contact_me .linkedin_link
+{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+.contact_me .email_link
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.contact_me .email a
+{
+    color: white;
+    font-size: 28px;
+}
+
+.contact_me .email a:hover, .contact_me .email a:focus
+{
+    
+    text-shadow: 5px 5px 8px rgb(28,100,248);/* accent color 1, shadows the text*/
+}
+
+
+.contact_me .social_media_share_buttons
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0; 
+
+}
+
+
+
+
+
+@media screen and (max-width: 1220px) {
+    .contact_me [class^=col-md]
+    {
+        height: 150px;
+    }
+
+    
+    
+}
+@media screen and (max-width: 1090px) {
+    .contact_me [class^=col-md]
+    {
+        height: 175px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .contact_me [class^=col-md]
+    {
+        height: 100px;
+    }
+    .contact_me .row{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .contact_me [class^=col-md]
+    {
+        height: 100px;
+    }
+    .contact_me .email a
+    {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .contact_me [class^=col-md]
+    {
+        height: 100px;
+    }
+    .contact_me .email a
+    {
+        font-size: 16px;
+    }
+
+}
+
+/*========================credits========================*/
+
+.credits{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    padding-bottom: 70px;
+    position: relative;
+    background-color: rgb(249,251,255);/*accent color 3, off white*/
+    text-align: center;
+    color: rgb(28,100,248);/*accent color 1*/
+    /*add pic here!! background-image: url("http://placehold.it/1280x720");   
+    background-size: cover;*/
+    /*START: part of the code that allows for curtain reveal of the credits*/
+    z-index: -4;/*change (override with CSS cascade) z-index to -3 when the credits section is in view, else when out of view of default page onload the z-index is -4*/
+    height: 524px;/*70+384+70*/
+    width: 100%;
+    /*END: part of the code that allows for curtain reveal of the credits*/
+}
+
+
+
+.credits .container-fluid{
+    height: 384px;
+    /*position: relative;*/
+    /*max-width: 1400px;*/
+    
+    /*START: part of the code that allows for curtain reveal of the credits*/
+    width: 100%;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-70%);
+    /*END: part of the code that allows for curtain reveal of the credits*/
+}
+
+.credits .section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.credits .signature-img{
+    width: 75%;
+    height: auto;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .credits{
+        height: 500px;
+    }
+    .credits .container-fluid{
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-75%);
+    }    
+}
+
+
+@media screen and (max-width: 992px) {
+    .credits{
+        height: 500px;
+        
+    }
+    .credits .container-fluid{
+        top: 68%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-68%);
+    }        
+}
+
+@media screen and (max-width: 710px) {
+    .credits{
+        height: 450px;
+    }
+     .credits .container-fluid{
+        height: 300px;
+        top: 67%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-67%);
+    }    
+}
+@media screen and (max-width: 550px) {
+    .credits{
+        height: 450px;
+    }
+     .credits .container-fluid{
+        height: 250px;
+        top: 64%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-64%);
+    }    
+}
+
+
+/*========================footer========================*/
+.footer
+{
+    padding-top: 70px;/*add 70px top padding to offset the fixed title bar*/
+    position: relative;
+    height: 100px;
+    background-color:#333333;/*need this "hack" since Bootstrap Footers have a hard time sticking to the bottom of the page when resized*/
+    
+}
+
+
+
+.footer .section
+{
+    margin: 0px auto; 
+    padding-top: 25px;
+    position: absolute;/*need this "hack" since Bootstrap Footers have a hard time sticking to the bottom of the page when resized*/
+    bottom: 0px;/*need this "hack" since Bootstrap Footers have a hard time sticking to the bottom of the page when resized*/
+    width: 100%;/*need this "hack" since Bootstrap Footers have a hard time sticking to the bottom of the page when resized*/
+    background-color:#333333;/*need this "hack" since Bootstrap Footers have a hard time sticking to the bottom of the page when resized*/
+}
+
+.footer .container-fluid
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.footer .container-fluid .row [class^=col-md]
+{
+    text-align: center;
+}
+
+
+.footer .col-md-4 .paypal_donate
+{
+
+    margin-top: 30px;
+}
+
+
+.footer .col-md-4 .social_media
+{    
+    margin-top: 30px;
+}
+
+
+
+.footer .special_thanks
+{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    background-color: #333333;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    border: 2px solid white;    
+}
+
+.footer a:hover .special_thanks, .footer a:focus .special_thanks
+{
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(28,100,248);/*accent color 1*/
+}
+
+@media screen and (max-width: 992px) {
+    
+    .footer .col-md-4 .paypal_donate
+    {
+
+        margin-top: 0px;
+    }
+
+
+    .footer .col-md-4 .social_media
+    {    
+        margin-top: 0px;
+    }
+    
+    
+    .footer .special_thanks
+    {
+        margin-top: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .footer .copyright
+    {
+        margin-bottom: 20px;
+    }
+}
+
+
+

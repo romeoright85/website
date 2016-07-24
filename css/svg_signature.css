@@ -1,0 +1,1493 @@
+
+
+/*=============Rtop=============*/
+.svg-Rtop {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 215;
+  stroke-dashoffset: 215;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: Rtop 0.4s linear forwards;
+  -moz-animation: Rtop 0.4s linear forwards;
+  -o-animation: Rtop 0.4s linear forwards;
+}
+
+
+@-webkit-keyframes Rtop {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes Rtop {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes Rtop {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-Rtop {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 215;
+		  stroke-dashoffset: 0;
+		}
+
+}
+
+
+/*=============Rback=============*/
+.svg-Rback {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+   /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+ /*delay by: See Excel Time Calculator*/
+  -webkit-animation: Rback 0.3s linear forwards 0.4s;
+  -moz-animation: Rback 0.3s linear forwards 0.4s;
+  -o-animation: Rback 0.3s linear forwards 0.4s;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes Rback {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes Rback {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes Rback {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-Rback {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 76;
+		  stroke-dashoffset: 0;
+		}
+
+}	
+
+
+
+
+
+
+
+
+/*=============Rfront=============*/
+.svg-Rfront {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 53;
+  stroke-dashoffset: 53;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: Rfront 0.2s linear forwards 0.7s;
+  -moz-animation: Rfront 0.2s linear forwards 0.7s;
+  -o-animation: Rfront 0.2s linear forwards 0.7s;
+}
+
+@-webkit-keyframes Rfront {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes Rfront {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes Rfront {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-Rfront {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 53;
+		  stroke-dashoffset: 0;
+		}
+
+}	
+
+
+
+
+
+/*=============ibody=============*/
+.svg-ibody {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: ibody 0.2s linear forwards 0.9s;
+  -moz-animation: ibody 0.2s linear forwards 0.9s;
+  -o-animation: ibody 0.2s linear forwards 0.9s;
+}
+
+@-webkit-keyframes ibody {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes ibody {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes ibody {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-ibody {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 53;
+		  stroke-dashoffset: 0;
+		}
+
+}	
+
+
+
+
+
+
+/*=============idot=============*/
+.svg-idot {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 4;
+  stroke-dashoffset: 4;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: idot 0.1s linear forwards 1.1s;
+  -moz-animation: idot 0.1s linear forwards 1.1s;
+  -o-animation: idot 0.1s linear forwards 1.1s;
+}
+
+@-webkit-keyframes idot {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes idot {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes idot {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-idot {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 4;
+		  stroke-dashoffset: 0;
+		}
+
+}	
+
+
+
+
+
+/*=============c=============*/
+.svg-c {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 63;
+  stroke-dashoffset: 63;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: c 0.25s linear forwards 1.2s;
+  -moz-animation: c 0.25s linear forwards 1.2s;
+  -o-animation: c 0.25s linear forwards 1.2s;
+}
+
+@-webkit-keyframes c {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes c {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes c {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-c {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 63;
+		  stroke-dashoffset: 0;
+		}
+
+}	
+
+
+
+
+
+
+/*=============h=============*/
+.svg-h {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 143;
+  stroke-dashoffset: 143;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+ /*delay by: See Excel Time Calculator*/
+  -webkit-animation: h 0.4s linear forwards 1.45s;
+  -moz-animation: h 0.4s linear forwards 1.45s;
+  -o-animation: h 0.4s linear forwards 1.45s;
+}
+
+@-webkit-keyframes h {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes h {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes h {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-h {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 143;
+		  stroke-dashoffset: 0;
+		}
+
+}	
+
+
+
+
+
+
+/*=============a=============*/
+.svg-a {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 107;
+  stroke-dashoffset: 107;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: a 0.4s linear forwards 1.85s;
+  -moz-animation: a 0.4s linear forwards 1.85s;
+  -o-animation: a 0.4s linear forwards 1.85s;
+}
+
+@-webkit-keyframes a {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes a {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes a {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-a {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 107;
+		  stroke-dashoffset: 0;
+		}
+
+}		
+
+
+
+/*=============r=============*/
+.svg-r {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 68;
+  stroke-dashoffset: 68;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: r 0.3s linear forwards 2.25s;
+  -moz-animation: r 0.3s linear forwards 2.25s;
+  -o-animation: r 0.3s linear forwards 2.25s;
+}
+
+@-webkit-keyframes r {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes r {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes r {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-r {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 68;
+		  stroke-dashoffset: 0;
+		}
+
+}		
+
+
+
+
+/*=============d=============*/
+.svg-d {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 136;
+  stroke-dashoffset: 136;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: d 0.4s linear forwards 2.55s;
+  -moz-animation: d 0.4s linear forwards 2.55s;
+  -o-animation: d 0.4s linear forwards 2.55s;
+}
+
+@-webkit-keyframes d {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes d {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes d {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-d {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 136;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+
+
+
+
+/*=============Nleft=============*/
+.svg-Nleft {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 63;
+  stroke-dashoffset: 63;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+ /*delay by: See Excel Time Calculator*/
+  -webkit-animation: Nleft 0.3s linear forwards 3.05s;
+  -moz-animation: Nleft 0.3s linear forwards 3.05s;
+  -o-animation: Nleft 0.3s linear forwards 3.05s;
+}
+
+@-webkit-keyframes Nleft {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes Nleft {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes Nleft {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-Nleft {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 63;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+
+
+
+
+/*=============Nmiddle=============*/
+.svg-Nmiddle {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 71;
+  stroke-dashoffset: 71;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: Nmiddle 0.3s linear forwards 3.35s;
+  -moz-animation: Nmiddle 0.3s linear forwards 3.35s;
+  -o-animation: Nmiddle 0.3s linear forwards 3.35s;
+}
+
+@-webkit-keyframes Nmiddle {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes Nmiddle {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes Nmiddle {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-Nmiddle {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 71;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+	
+
+
+/*=============Nright=============*/
+.svg-Nright {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: Nright 0.3s linear forwards 3.65s;
+  -moz-animation: Nright 0.3s linear forwards 3.65s;
+  -o-animation: Nright 0.3s linear forwards 3.65s;
+}
+
+@-webkit-keyframes Nright {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes Nright {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes Nright {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-Nright {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 60;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+	
+
+
+
+
+/*=============g=============*/
+.svg-g {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 136;
+  stroke-dashoffset: 136;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: g 0.4s linear forwards 3.95s;
+  -moz-animation: g 0.4s linear forwards 3.95s;
+  -o-animation: g 0.4s linear forwards 3.95s;
+}
+
+@-webkit-keyframes g {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes g {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes g {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-g {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 136;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+	
+
+
+/*=============u=============*/
+.svg-u {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 71;
+  stroke-dashoffset: 71;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: u 0.3s linear forwards 4.35s;
+  -moz-animation: u 0.3s linear forwards 4.35s;
+  -o-animation: u 0.3s linear forwards 4.35s;
+}
+
+@-webkit-keyframes u {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes u {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes u {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-u {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 71;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+				
+
+/*=============yleft=============*/
+.svg-yleft {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 32;
+  stroke-dashoffset: 32;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: yleft 0.2s linear forwards 4.65s;
+  -moz-animation: yleft 0.2s linear forwards 4.65s;
+  -o-animation: yleft 0.2s linear forwards 4.65s;
+}
+
+@-webkit-keyframes yleft {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes yleft {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes yleft {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-yleft {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 32;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+					
+
+
+/*=============yright=============*/
+.svg-yright {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 69;
+  stroke-dashoffset: 69;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+ /*delay by: See Excel Time Calculator*/
+  -webkit-animation: yright 0.3s linear forwards 4.85s;
+  -moz-animation: yright 0.3s linear forwards 4.85s;
+  -o-animation: yright 0.3s linear forwards 4.85s;
+}
+
+@-webkit-keyframes yright {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes yright {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes yright {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-yright {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 69;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+
+
+
+
+/*=============e=============*/
+.svg-e {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 98;
+  stroke-dashoffset: 98;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: e 0.3s linear forwards 5.15s;
+  -moz-animation: e 0.3s linear forwards 5.15s;
+  -o-animation: e 0.3s linear forwards 5.15s;
+}
+
+@-webkit-keyframes e {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes e {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes e {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-e {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 98;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+
+
+
+/*=============n=============*/
+.svg-n {
+   /*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+  opacity: 0;
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+  /*stroke length got with javascript*/
+  stroke-dasharray: 83;
+  stroke-dashoffset: 83;
+  /*write the first name first*/
+  /*change the delays accordingly*/
+  /*the first number is the animation length/time, and any second number is the delay. blank for no delay*/
+  /*delay by: See Excel Time Calculator*/
+  -webkit-animation: n 0.3s linear forwards 5.45s;
+  -moz-animation: n 0.3s linear forwards 5.45s;
+  -o-animation: n 0.3s linear forwards 5.45s;
+}
+
+@-webkit-keyframes n {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-moz-keyframes n {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+@-o-keyframes n {
+	from{
+		/*need to add opacity: 100 in the keyframes for both to and from else it either fades in or out. but initialize with opacity in the class properties to hide some text artifacts that occur in browsers like firefox*/
+		opacity: 100;
+	}
+	to {
+		opacity: 100;
+		stroke-dashoffset: 0;
+
+	}
+}
+
+
+/*For IE 10+, need to below all other browser code else it won't work*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			
+	   .svg-n {
+		  opacity: 100;
+		  fill: none;
+		  stroke: #000;
+		  stroke-width: 4;
+		  stroke-linecap: round;
+		  stroke-linejoin: round;
+		  /*the browser draws the whole path, but to animate, the offset is changed over time to look like it's being drawn in by a pen*/
+		  /*stroke length got with javascript*/
+		  stroke-dasharray: 83;
+		  stroke-dashoffset: 0;
+		}
+
+}			
+					
+

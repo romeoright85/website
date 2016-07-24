@@ -1,0 +1,31 @@
+Example Web URL after launching Apache Monitor:
+http://mywebsite.localdomain/practice16
+
+
+Note: Remember when testing cross browser, retc. to refresh the pages to see the updates!
+
+
+Take notes here:
+K:\Working Directory\DESIGN_PROJ\Design Projects\Robot\My Notes\Text Notes
+
+------------------
+
+switch to container-fluid from container
+
+------------------
+
+
+Added media queries at first but then removed it since when adding content it changes things. Add media queries in the end.
+
+------------------
+
+
+Practice bootstrap landing page with a personal resume/portfolio website
+
+
+------------------
+
+image gallery rollover
+http://tympanus.net/codrops/2010/09/08/full-page-image-gallery/
+
+

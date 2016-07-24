@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+
+.back_button
+{
+    position: absolute;
+    display: inline-block;
+    right: 1%;
+    top: 1%;
+    z-index: 1;
+}
+.back_button .back_arrow
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.back_button .back_text
+{
+    display: inline-block;
+    font-size: 28px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+		
+a:hover {
+    color: rgb(105,149,250); /* accent color 2 */
+}
+
+
+.wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  font: 300 30px/1 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  animation: 60s credits linear infinite;/*controls the speed of the scroll*/
+}
+
+
+
+
+
+.website_title {
+  margin-bottom: 500px;
+  font-size: 75px;
+}
+
+
+
+.thank_you_message {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 50px;
+    
+}
+
+
+
+.subject_title {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.subject_name {
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+@keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -600%;/*increase this value when you have add more names*/
+  }
+}
+
+
+.end_thank_you_message {
+    font-size: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+.outro_message {
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 440px) {
+
+    
+    .back_button
+    {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }    
+    .back_button .back_text
+    {
+        font-size: 24px;
+    }
+    
+    .wrapper {
+        width: 250px;
+        margin-left: -125px;
+    }
+
+    .website_title {
+      
+      font-size: 40px;
+    }
+
+
+
+    .thank_you_message {
+        font-size: 26px;
+        
+    }
+
+
+
+    .subject_title {
+        
+        font-size: 18px;
+    }
+
+    .subject_name {
+        
+        font-size: 36px;
+    }
+
+    .outro_message {
+        font-size: 16px;
+    }
+
+    
+}

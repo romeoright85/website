@@ -1,0 +1,335 @@
+/*
+http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+*/
+
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+
+figure.effect-apollo {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	/*margin: 10px 1%;
+	min-width: 320px;
+	max-width: 350px;
+	max-height: 360px;
+	width: 48%;
+	height: auto;*/
+	background: #1C64F8;
+	text-align: center;
+	cursor: pointer;
+    
+
+}
+
+figure.effect-apollo div.img {
+	position: relative;
+    display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;    
+ 
+}
+
+figure.effect-apollo figcaption {
+	padding: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+    
+
+
+}
+
+figure.effect-apollo figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+/*
+figure.effect-apollo h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+
+
+figure.effect-apollo h2 span {
+	font-weight: 800;
+}
+
+
+figure.effect-apollo h2,*/
+figure.effect-apollo p {
+	margin: 0;
+
+}
+
+figure.effect-apollo p {
+	letter-spacing: 1px;
+	/*font-size: 68.5%;*/
+    font-size: 100%;
+    
+
+    
+
+    
+}
+
+
+figure.effect-apollo {
+	/*background: #3498db;*/
+
+}
+
+figure.effect-apollo div.img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	/*-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);*/
+
+}
+
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	/*-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);*/
+    
+    
+    
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-115%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-115%,0);
+    
+
+}
+
+figure.effect-apollo p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	/*margin: 3em;*/
+    margin-bottom: 15px;
+	padding: 0 1em;
+	/*max-width: 150px;*/
+    width: 100%;
+	/*border-right: 4px solid #fff;*/
+    border: 2px solid white;
+	/*text-align: right;*/
+    text-align: center;
+	
+    opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+
+}
+
+
+/*figure.effect-apollo h2 {
+	text-align: center;
+}
+*/
+
+figure.effect-apollo:hover div.img {
+	opacity: 0.4;
+	/*-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);*/
+    padding: 0px;/*debug*/
+    margin: 0px;/*debug*/
+}
+
+figure.effect-apollo:hover figcaption::before {
+    /*-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);*/
+    
+    
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,115%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,115%,0);
+
+}
+
+figure.effect-apollo:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+	figure.effect-apollo {
+		display: inline-block;
+		float: none;
+	}
+}
+
+
+
+
+/*
+Caption Hover Effect 6
+http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+It also uses modernizr.custom.js and toucheffects.js but I didn't include it because it gets complicated since I have a different html structure
+I modified this to make it work with my html structure
+*/
+
+
+
+/* Caption Style 6 */
+.cs-style-6-img {
+	z-index: 1;
+    position: relative;/*my edit: this allows the image to go in front of the text*/
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+
+}
+
+.img-container:hover .cs-style-6-img
+{
+	-webkit-transform: translateY(-50px) scale(0.5);
+	-moz-transform: translateY(-50px) scale(0.5);
+	-ms-transform: translateY(-50px) scale(0.5);
+	transform: translateY(-50px) scale(0.5);
+}
+
+.cs-style-6-caption-div{/*some information was taken from .education .side-page .img to match the image's attributes*/
+    height: 300px;/*my edit: all of this was eye-balled and estimated, no exact science*/
+	width: 300px;/*my edit: all of this was eye-balled and estimated, no exact science*/
+    border-radius: 10%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 2px;
+    border-color: rgb(28,100,248);
+    border-style: solid;
+        
+}
+
+
+.cs-style-6-caption{/*my edit: all of this was eye-balled and estimated, no exact science*/
+    color: rgb(28,100,248);
+    display: inline-block;
+    text-shadow: none;
+    
+}
+h1.cs-style-6-caption {/*my edit: all of this was eye-balled and estimated, no exact science*/
+    font-size: 24px;
+    margin-top: 65%;
+}
+p.cs-style-6-caption {/*my edit: all of this was eye-balled and estimated, no exact science*/
+    font-size: 18px;
+    
+}
+
+
+/*
+Bubba Effect
+http://tympanus.net/Development/HoverEffectIdeas/index.html
+I modified this to make it work with my html structure
+*/
+
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+div.effect-bubba {
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    display: inline-block;
+    background: #000;
+}
+
+div.effect-bubba .img{
+    opacity: 0.8;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+div.effect-bubba:hover .img {
+	opacity: 0.4;
+}
+
+div.effect-bubba div.caption
+{
+    color: white;
+}
+/*border positions*/
+div.effect-bubba div.caption::before,
+div.effect-bubba div.caption::after {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+/*top and bottom borders*/
+div.effect-bubba div.caption::before {
+	border-radius: 10%;
+    border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+/*left and right borders*/
+div.effect-bubba div.caption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+    border-radius: 10%;
+}
+/*top text, shift text position when not hovered*/
+div.effect-bubba h2 {
+	margin-top: -190px;/*eyeballed adjust value to position the text. This effects both the h2 and the p sicne the p is right under it*/
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+/*bottom text, shift text position when not hovered*/
+div.effect-bubba p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+/*border appear on hover*/
+div.effect-bubba:hover div.caption::before,
+div.effect-bubba:hover div.caption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/*return text to normal position on hover*/
+div.effect-bubba:hover h2,
+div.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

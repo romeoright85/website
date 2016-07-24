@@ -1,0 +1,98 @@
+
+/*
+I added afterwards to fade in and out the page
+Add this CSS class to the body tag of the pag
+*/
+.fadeIn_1s {
+    animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s; /* Firefox */
+    -webkit-animation: fadeIn 1s; /* Safari and Chrome */
+    -o-animation: fadeIn 1s; /* Opera */
+    animation-fill-mode: forwards;/*to allow it to latch the zoom after it's animated*/
+}
+
+
+.fadeIn_2s {
+    animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s; /* Firefox */
+    -webkit-animation: fadeIn 2s; /* Safari and Chrome */
+    -o-animation: fadeIn 2s; /* Opera */
+    animation-fill-mode: forwards;/*to allow it to latch the zoom after it's animated*/
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeIn { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadeIn { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeIn { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.fadeOut_0d5s {
+    animation: fadeOut 0.5s;
+    -moz-animation: fadeOut 0.5s; /* Firefox */
+    -webkit-animation: fadeOut 0.5s; /* Safari and Chrome */
+    -o-animation: fadeOut 0.5s; /* Opera */
+    animation-fill-mode: forwards;/*to allow it to latch the zoom after it's animated*/
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeOut { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeOut { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeOut { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
