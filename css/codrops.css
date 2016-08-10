@@ -157,7 +157,6 @@ figure.effect-apollo:hover figcaption::before {
     /*-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);*/
     
-    
 	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,115%,0);
 	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,115%,0);
 
@@ -257,6 +256,7 @@ div.effect-bubba {
     border-radius: 10%;
     display: inline-block;
     background: #000;
+	position: relative;
 }
 
 div.effect-bubba .img{
@@ -288,19 +288,22 @@ div.effect-bubba div.caption::after {
 }
 /*top and bottom borders*/
 div.effect-bubba div.caption::before {
-	border-radius: 10%;
+	
+    border-radius: 10%;
     border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+	/*-webkit-transform: scale(0,1);
+	transform: scale(0,1);*/
+    
 }
 /*left and right borders*/
 div.effect-bubba div.caption::after {
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	-webkit-transform: scale(1,0);
-	transform: scale(1,0);
+	
     border-radius: 10%;
+    border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	/*-webkit-transform: scale(1,0);
+	transform: scale(1,0);    */
 }
 /*top text, shift text position when not hovered*/
 div.effect-bubba h2 {
@@ -324,7 +327,7 @@ div.effect-bubba:hover div.caption::before,
 div.effect-bubba:hover div.caption::after {
 	opacity: 1;
 	-webkit-transform: scale(1);
-	transform: scale(1);
+	transform: scale(1);/*FIX HERE*/
 }
 /*return text to normal position on hover*/
 div.effect-bubba:hover h2,
